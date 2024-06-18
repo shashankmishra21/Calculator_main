@@ -1,0 +1,125 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+.calculator {
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 700px;
+}
+
+.placeholder {
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #717377;
+    border-radius: 16px;
+    padding: 30px;
+    margin: 25px auto;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 2em;
+    text-align: right;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: rgb(78, 73, 73);
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+button {
+    border: none;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 1.25em;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    flex: 1;
+}
+
+
+
+.equalbtn {
+    background-color: #e64023;
+}
+
+.operator {
+    color: rgb(9, 248, 21);
+}
+
+.first {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .calculator {
+        padding: 15px;
+    }
+
+    .placeholder {
+        padding: 20px;
+        font-size: 1.5em;
+        margin: 15px auto;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        margin: 5px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 10px;
+    }
+
+    .placeholder {
+        padding: 15px;
+        font-size: 1.25em;
+        margin: 10px auto;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        font-size: 0.875em;
+    }
+}
+
+@media (min-width: 600px) {
+    .placeholder{
+        margin: 30px;
+    }
+}
